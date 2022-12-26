@@ -1,3 +1,5 @@
 newenv/
 __pycache__/
+private.py/
 *.png/
+
