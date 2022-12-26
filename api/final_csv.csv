@@ -1,0 +1,141 @@
+ingredients,id,missedIngredientCount,type,aisle,usedIngridientCount,title,name,unit,amount
+apple,673463,2,missed__ingredient,Canned and Jarred,2.0,Slow Cooker Apple Pork Tenderloin,beef broth,cups,2.0
+apple,673463,2,missed__ingredient,Meat,2.0,Slow Cooker Apple Pork Tenderloin,pork tenderloin,serving,1.0
+apple,673463,2,missed__ingredient,Produce,,Slow Cooker Apple Pork Tenderloin,apple,,
+apple,673463,2,missed__ingredient,Produce,,Slow Cooker Apple Pork Tenderloin,green apples,,
+apple,660261,2,missed__ingredient,Spices and Seasonings,1.0,Slow Cooked Applesauce,cinnamon,teaspoon,0.5
+apple,660261,2,missed__ingredient,Spices and Seasonings,1.0,Slow Cooked Applesauce,nutmeg,pinch,1.0
+apple,660261,2,missed__ingredient,Produce,,Slow Cooked Applesauce,apples,,
+apple,633547,2,missed__ingredient,Spices and Seasonings,1.0,Baked Cinnamon Apple Slices,cinnamon,tablespoons,1.5
+apple,633547,2,missed__ingredient,Dried Fruits;Produce;Baking,1.0,Baked Cinnamon Apple Slices,raisins,cup,0.5
+apple,633547,2,missed__ingredient,Produce,,Baked Cinnamon Apple Slices,apples,,
+apple,716433,3,missed__ingredient,Dried Fruits;Produce;Baking,1.0,Easiest Breakfast Ever: Sunny Fruit Parfait,raisins,serving,1.0
+apple,716433,3,missed__ingredient,Savory Snacks,1.0,Easiest Breakfast Ever: Sunny Fruit Parfait,sunflower seeds,serving,1.0
+apple,716433,3,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Easiest Breakfast Ever: Sunny Fruit Parfait,yogurt,serving,1.0
+apple,716433,3,missed__ingredient,Produce,,Easiest Breakfast Ever: Sunny Fruit Parfait,apple,,
+apple,633548,3,missed__ingredient,Cereal,1.0,Baked Cinnamon Apple Wedges,maple syrup,tsp,1.0
+apple,633548,3,missed__ingredient,Spices and Seasonings,1.0,Baked Cinnamon Apple Wedges,cinnamon,tsp,0.5
+apple,633548,3,missed__ingredient,Spices and Seasonings,1.0,Baked Cinnamon Apple Wedges,nutmeg,tsp,0.25
+apple,633548,3,missed__ingredient,Produce,,Baked Cinnamon Apple Wedges,apple,,
+apple,646317,3,missed__ingredient,Produce,1.0,Harvest Hash,sweet potato,,2.0
+apple,646317,3,missed__ingredient,Meat,1.0,Harvest Hash,bacon,,6.0
+apple,646317,3,missed__ingredient,Produce,1.0,Harvest Hash,red onion,serving,1.0
+apple,646317,3,missed__ingredient,Produce,,Harvest Hash,honey crisp apples,,
+apple,662665,3,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Swiss Bircher Muesli,milk,cup,0.5
+apple,662665,3,missed__ingredient,Cereal,1.0,Swiss Bircher Muesli,muesli,cup,0.5
+apple,662665,3,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Swiss Bircher Muesli,skim vanilla yoghurt,tablespoons,3.0
+apple,662665,3,missed__ingredient,Produce,,Swiss Bircher Muesli,apple,,
+apple,662175,3,missed__ingredient,Ethnic Foods;Health Foods,1.0,Sugar-Free Apple and Cinnamon Jam,agar,teaspoon,0.5
+apple,662175,3,missed__ingredient,Spices and Seasonings,1.0,Sugar-Free Apple and Cinnamon Jam,cinnamon powder,teaspoon,1.0
+apple,662175,3,missed__ingredient,Baking,1.0,Sugar-Free Apple and Cinnamon Jam,sukrin sweetener,cups,1.5
+apple,662175,3,missed__ingredient,Produce,,Sugar-Free Apple and Cinnamon Jam,apples,,
+apple,663748,3,missed__ingredient,"Nut butters, Jams, and Honey",1.0,Traditional Apple Tart,jam,tablespoons,4.0
+apple,663748,3,missed__ingredient,Refrigerated;Frozen,1.0,Traditional Apple Tart,pastry crust,grams,500.0
+apple,663748,3,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Traditional Apple Tart,unsalted butter,grams,80.0
+apple,663748,3,missed__ingredient,Produce,,Traditional Apple Tart,granny smith apple,,
+apple,636835,3,missed__ingredient,Gourmet,1.0,Canadian apple butter,vanilla powder,tsp,0.25
+apple,636835,3,missed__ingredient,Spices and Seasonings,1.0,Canadian apple butter,cinnamon,pinch,1.0
+apple,636835,3,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Canadian apple butter,butter,g,30.0
+apple,636835,3,missed__ingredient,Produce,,Canadian apple butter,apples,,
+mango,716330,3,missed__ingredient,Meat,1.0,Chicken and Mango Skewer,chicken breast,pound,0.25
+mango,716330,3,missed__ingredient,Canned and Jarred,1.0,Chicken and Mango Skewer,chicken stock cube,,1.0
+mango,716330,3,missed__ingredient,Spices and Seasonings,1.0,Chicken and Mango Skewer,seasoning mix,Tablespoon,1.5
+mango,716330,3,missed__ingredient,Produce,,Chicken and Mango Skewer,mangos,,
+mango,653145,3,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,No Churn Mango Ice Cream,double cream,ml,500.0
+mango,653145,3,missed__ingredient,Beverages,1.0,No Churn Mango Ice Cream,mango nectar,cup,0.75
+mango,653145,3,missed__ingredient,Produce,1.0,No Churn Mango Ice Cream,lime juice,tablespoon,1.0
+mango,653145,3,missed__ingredient,Produce,,No Churn Mango Ice Cream,mango,,
+mango,663176,3,missed__ingredient,Canned and Jarred,1.0,Thai-Style Sticky Rice & Mango Dessert Shots,canned coconut milk,oz,14.0
+mango,663176,3,missed__ingredient,Produce;Spices and Seasonings,1.0,Thai-Style Sticky Rice & Mango Dessert Shots,fresh mint leaves,leaves,1.0
+mango,663176,3,missed__ingredient,Pasta and Rice,1.0,Thai-Style Sticky Rice & Mango Dessert Shots,short grain rice,cup,1.0
+mango,663176,3,missed__ingredient,Produce,,Thai-Style Sticky Rice & Mango Dessert Shots,mangos,,
+mango,663849,3,missed__ingredient,Ethnic Foods;Health Foods,1.0,Tropical Citrus Granita,coconut cream,cup,1.0
+mango,663849,3,missed__ingredient,Beverages,1.0,Tropical Citrus Granita,coconut water,cups,1.25
+mango,663849,3,missed__ingredient,Beverages,1.0,Tropical Citrus Granita,orange juice,mL,2.0
+mango,663849,3,missed__ingredient,Produce,,Tropical Citrus Granita,mango,,
+mango,1697525,3,missed__ingredient,Produce,1.0,6 Quick & Easy Smoothies To Start Your Morning,pineapple,c,0.5
+mango,1697525,3,missed__ingredient,Produce,1.0,6 Quick & Easy Smoothies To Start Your Morning,banana,,0.5
+mango,1697525,3,missed__ingredient,Beverages,1.0,6 Quick & Easy Smoothies To Start Your Morning,orange juice,c,0.5
+mango,1697525,3,missed__ingredient,Produce,,6 Quick & Easy Smoothies To Start Your Morning,mango,,
+mango,663858,4,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Tropical Ice Pops,coconut milk beverage,cup,1.0
+mango,663858,4,missed__ingredient,Canned and Jarred,1.0,Tropical Ice Pops,light coconut milk,cup,1.0
+mango,663858,4,missed__ingredient,Cereal,1.0,Tropical Ice Pops,maple syrup,Tbs,3.5
+mango,663858,4,missed__ingredient,Produce,1.0,Tropical Ice Pops,pineapple,cup,0.75
+mango,663858,4,missed__ingredient,Produce,,Tropical Ice Pops,mango,,
+mango,661834,4,missed__ingredient,Produce,1.0,Strawberry Mango Green Tea Limeade,strawberries,cup,1.0
+mango,661834,4,missed__ingredient,Produce,1.0,Strawberry Mango Green Tea Limeade,lime juice,cup,1.0
+mango,661834,4,missed__ingredient,Tea and Coffee,1.0,Strawberry Mango Green Tea Limeade,green tea,cups,4.0
+mango,661834,4,missed__ingredient,Alcoholic Beverages,1.0,Strawberry Mango Green Tea Limeade,simple syrup,cup,0.25
+mango,661834,4,missed__ingredient,Produce,,Strawberry Mango Green Tea Limeade,mango,,
+mango,650844,4,missed__ingredient,Produce,1.0,Mango-Berry Swirled Smoothies,blueberries,cup,1.0
+mango,650844,4,missed__ingredient,Beverages,1.0,Mango-Berry Swirled Smoothies,juice of orange,,1.0
+mango,650844,4,missed__ingredient,Beverages,1.0,Mango-Berry Swirled Smoothies,pomegranate juice,cup,1.0
+mango,650844,4,missed__ingredient,Produce,1.0,Mango-Berry Swirled Smoothies,strawberries,cup,1.0
+mango,650844,4,missed__ingredient,Produce,,Mango-Berry Swirled Smoothies,mangoes,,
+mango,644045,4,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Fruity Yogurt Parfait,plain yogurt,cup,1.0
+mango,644045,4,missed__ingredient,Beverages,1.0,Fruity Yogurt Parfait,orange juice,teaspoons,2.0
+mango,644045,4,missed__ingredient,Produce,1.0,Fruity Yogurt Parfait,kiwi,,1.0
+mango,644045,4,missed__ingredient,Produce,1.0,Fruity Yogurt Parfait,strawberries,,4.0
+mango,644045,4,missed__ingredient,Produce,,Fruity Yogurt Parfait,mango,,
+mango,650852,4,missed__ingredient,Sweet Snacks,1.0,Mango-Refrigerator Cake,graham crackers,servings,10.0
+mango,650852,4,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Mango-Refrigerator Cake,heavy whipping cream,pint,1.0
+mango,650852,4,missed__ingredient,Baking,1.0,Mango-Refrigerator Cake,stevia,teaspoon,0.25
+mango,650852,4,missed__ingredient,Baking,1.0,Mango-Refrigerator Cake,vanilla,teaspoon,1.0
+mango,650852,4,missed__ingredient,Produce,,Mango-Refrigerator Cake,mangoes,,
+melon,638601,4,missed__ingredient,Canned and Jarred,1.0,Chilled melon summer soup,greek olives,tsp,6.0
+melon,638601,4,missed__ingredient,Produce,1.0,Chilled melon summer soup,lime juice,tsp,6.0
+melon,638601,4,missed__ingredient,Produce,1.0,Chilled melon summer soup,bell pepper,serving,1.0
+melon,638601,4,missed__ingredient,Produce;Spices and Seasonings,1.0,Chilled melon summer soup,mint leaves,leaves,1.0
+melon,638601,4,missed__ingredient,Produce,,Chilled melon summer soup,musk melon,,
+orange,653999,3,missed__ingredient,Ethnic Foods,2.0,Oranges & Pomegranates In Kaffir Lime Syrup,kaffir lime leaves,inches,2.0
+orange,653999,3,missed__ingredient,Produce;Spices and Seasonings,2.0,Oranges & Pomegranates In Kaffir Lime Syrup,mint leaves,leaves,1.0
+orange,653999,3,missed__ingredient,Produce,2.0,Oranges & Pomegranates In Kaffir Lime Syrup,pomegranate arils,,0.5
+orange,653999,3,missed__ingredient,Produce,,Oranges & Pomegranates In Kaffir Lime Syrup,blood oranges,,
+orange,653999,3,missed__ingredient,Produce,,Oranges & Pomegranates In Kaffir Lime Syrup,oranges,,
+orange,653149,2,missed__ingredient,Produce,1.0,No Cook Cranberry Orange Relish,cranberries,ounce,12.0
+orange,653149,2,missed__ingredient,Nuts;Baking,1.0,No Cook Cranberry Orange Relish,pecans,cup,0.5
+orange,653149,2,missed__ingredient,Produce,,No Cook Cranberry Orange Relish,orange,,
+orange,637357,2,missed__ingredient,Produce,1.0,"Celery, Orange and Smoked Mackerel Salad",celery,stick,1.0
+orange,637357,2,missed__ingredient,Seafood,1.0,"Celery, Orange and Smoked Mackerel Salad",mackerel,fillet,1.0
+orange,637357,2,missed__ingredient,Produce,,"Celery, Orange and Smoked Mackerel Salad",orange,,
+orange,664281,3,missed__ingredient,Beverages,1.0,Vampire Kiss Martini,blood orange juice,ml,30.0
+orange,664281,3,missed__ingredient,Alcoholic Beverages,1.0,Vampire Kiss Martini,champagne,ml,30.0
+orange,664281,3,missed__ingredient,Alcoholic Beverages,1.0,Vampire Kiss Martini,vodka,ml,30.0
+orange,664281,3,missed__ingredient,Produce,,Vampire Kiss Martini,orange,,
+orange,653824,3,missed__ingredient,Produce,1.0,Orange Cashew Salad,romaine lettuce leaves,g,125.0
+orange,653824,3,missed__ingredient,Nuts;Savory Snacks,1.0,Orange Cashew Salad,cashew nuts,g,50.0
+orange,653824,3,missed__ingredient,Spices and Seasonings,1.0,Orange Cashew Salad,cumin,tsp,1.0
+orange,653824,3,missed__ingredient,Produce,,Orange Cashew Salad,oranges,,
+orange,659192,3,missed__ingredient,Seafood,1.0,Salt-Crusted Snapper With Blood Orange and Bay,snapper,pound,2.0
+orange,659192,3,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Salt-Crusted Snapper With Blood Orange and Bay,egg whites,,5.0
+orange,659192,3,missed__ingredient,Produce;Spices and Seasonings,1.0,Salt-Crusted Snapper With Blood Orange and Bay,bay leaves,,5.0
+orange,659192,3,missed__ingredient,Produce,,Salt-Crusted Snapper With Blood Orange and Bay,blood orange,,
+orange,653950,3,missed__ingredient,Beverages,1.0,Orange Sauce For Chicken Or Duck,orange juice,cup,0.5
+orange,653950,3,missed__ingredient,Produce,1.0,Orange Sauce For Chicken Or Duck,orange peel,tablespoons,2.0
+orange,653950,3,missed__ingredient,Frozen,1.0,Orange Sauce For Chicken Or Duck,vegetable,slice,1.0
+orange,653950,3,missed__ingredient,Produce,,Orange Sauce For Chicken Or Duck,orange,,
+orange,635786,4,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,Braid sweet citrus flavored licorice,cream,milliliters,50.0
+orange,635786,4,missed__ingredient,Produce,1.0,Braid sweet citrus flavored licorice,lemon,,1.0
+orange,635786,4,missed__ingredient,Produce,1.0,Braid sweet citrus flavored licorice,lime,,1.0
+orange,635786,4,missed__ingredient,Refrigerated;Frozen,1.0,Braid sweet citrus flavored licorice,puff pastry,box,1.0
+orange,635786,4,missed__ingredient,Produce,,Braid sweet citrus flavored licorice,orange,,
+orange,641443,4,missed__ingredient,Produce,1.0,Detox Orange Carrot Juice,carrots,,6.0
+orange,641443,4,missed__ingredient,Produce;Ethnic Foods;Spices and Seasonings,1.0,Detox Orange Carrot Juice,fresh ginger,inch,2.0
+orange,641443,4,missed__ingredient,Spices and Seasonings,1.0,Detox Orange Carrot Juice,ground turmeric,tsp,1.0
+orange,641443,4,missed__ingredient,"Nut butters, Jams, and Honey",1.0,Detox Orange Carrot Juice,honey,serving,1.0
+orange,641443,4,missed__ingredient,Produce,,Detox Orange Carrot Juice,oranges,,
+orange,653202,4,missed__ingredient,Canned and Jarred,1.0,No-Cook Cranberry Salad,pineapple chunks,oz,20.0
+orange,653202,4,missed__ingredient,"Milk, Eggs, Other Dairy",1.0,No-Cook Cranberry Salad,sweetened whipped cream,cup,0.75
+orange,653202,4,missed__ingredient,Nuts;Baking,1.0,No-Cook Cranberry Salad,walnuts,cup,0.5
+orange,653202,4,missed__ingredient,Canned and Jarred,1.0,No-Cook Cranberry Salad,whole berry cranberry sauce,oz,32.0
+orange,653202,4,missed__ingredient,Produce,,No-Cook Cranberry Salad,orange,,
+papaya,658827,9,missed__ingredient,Pasta and Rice,1.0,Rösti With Papaya Salad,bread crumbs,cup,0.25
+papaya,658827,9,missed__ingredient,Produce;Ethnic Foods;Spices and Seasonings,1.0,Rösti With Papaya Salad,ginger,inches,2.0
+papaya,658827,9,missed__ingredient,Produce,1.0,Rösti With Papaya Salad,green chilis,,2.0
+papaya,658827,9,missed__ingredient,Spices and Seasonings,1.0,Rösti With Papaya Salad,mustard seeds,teaspoon,0.25
+papaya,658827,9,missed__ingredient,Produce,1.0,Rösti With Papaya Salad,onion,medium size,1.0
+papaya,658827,9,missed__ingredient,Produce,1.0,Rösti With Papaya Salad,potatoes,medium size,4.0
+papaya,658827,9,missed__ingredient,Produce,1.0,Rösti With Papaya Salad,chilli,medium size,1.0
+papaya,658827,9,missed__ingredient,Spices and Seasonings,1.0,Rösti With Papaya Salad,red pepper powder,teaspoon,0.25
+papaya,658827,9,missed__ingredient,Spices and Seasonings,1.0,Rösti With Papaya Salad,turmeric powder,teaspoon,0.25
+papaya,658827,9,missed__ingredient,Produce,,Rösti With Papaya Salad,papaya,,
