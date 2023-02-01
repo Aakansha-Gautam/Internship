@@ -6,10 +6,13 @@ def boolean():
     try:
         connected=psycopg2.connect(host="localhost",user="postgres",password=1223,database="first")
         cursor=connected.cursor()
-        query='''select Path,Id from scrape_info where scraped=false order by id limit 1'''
+        query='''select id,path from scrape_info where scraped=false order by id '''
         cursor.execute(query)
-        return(cursor.fetchone())
-
+        full_path=[]
+        data=cursor.fetchall()
+        for j in data:
+            full_path.append((j[0],j[1]))
+        return(full_path)
     except psycopg2.DatabaseError as e:
         print(e)
     finally:

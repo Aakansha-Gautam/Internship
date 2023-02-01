@@ -1,0 +1,19 @@
+<form action='/option' method="POST" enctype="multipart/form-data">
+    <h1><label for="submit"> Google </label></h1>
+    <input type="submit" value="Google" />
+    <h1><label for="Daraz"> Daraz</label></h1>
+    <input type="submit" value="daraz" />
+    </form>
+    <body>
+      <form action='/download/' method="POST" enctype="multipart/form-data">
+          <h1>Download</h1>
+          <table class="fl-table">
+            <tbody>
+          <tr>
+            {%for v in name%}
+            <td> {{v[1]}}</td>
+            <td><a href="{{url_for(('downloading'),id=v[0])}}"> Download</a></td>
+            {%endfor%}
+          </tr>
+        </tbody>
+          </table>

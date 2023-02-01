@@ -5,36 +5,56 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.chrome.options import Options
 import pandas as pd
-import psycopg2
 from sqlalchemy import create_engine
+import os
+from sqlalchemy import create_engine
+from full import full_image
+from element_ss import element_image
+import psycopg2
 
-def get_value(search_query,id,path_):
+def get_value(filename,id):
     path="C:\\Program Files (x86)\\chromedriver.exe"
     options = Options()
+    options.headless=False
     options.add_argument('--headless')
     driver = webdriver.Chrome(path,options=options)
-    driver.get('https://www.google.com/')
-    language = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH,'/html/body/div[1]/div[4]/div/div/a')))
-    if language != 'English':
-        language.send_keys(Keys.RETURN)
-   
-    
+    try:
+        driver.get('https://www.google.com')
         try:
-            element = WebDriverWait(driver,10).until(
-                EC.presence_of_element_located((By.XPATH,'//div/input[1]'))
-            )
+            language = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.LINK_TEXT,'English')))
+            if language != 'English':
+                language.send_keys(Keys.RETURN)
+        except:
+            pass
+        with open(filename,'r')as file:
+            for i in file.readlines():
 
-            element.send_keys(search_query)
-            element.send_keys(Keys.RETURN)
-            main=driver.find_elements(By.XPATH,'//div[contains(@class,"g Ww4FFb") or contains(@jscontroller,"SC7lYd")]')
-            t=all_value(main)[0]
-            d=all_value(main)[1]
-            l=all_value(main)[2]
-            create_csv(search_query,t,d,l,path_)
-        finally:
+                driver.get('https://www.google.com')
+                element = WebDriverWait(driver,10).until(
+                    EC.presence_of_element_located((By.XPATH,'//div/input[1]'))
+                )
+
+                element.send_keys(i.strip())
+                element.send_keys(Keys.RETURN)
+                i_path="C:\\Users\\aakan\\OneDrive\\Desktop\\flask\\files"
+                image_path=os.path.join(i_path,id)
+                if not os.path.exists(image_path):
+                    os.mkdir(image_path)
+                final=os.path.join(image_path,i.strip())
+                if not os.path.exists(final):
+                    os.mkdir(final)
+                full_image(final,i.strip(),driver)
+                element_image(final,i.strip(),driver)
+                main=driver.find_elements(By.XPATH,'//div[contains(@class,"g Ww4FFb") or contains(@jscontroller,"SC7lYd")]')
+                title=all_value(main)[0]
+                description=all_value(main)[1]
+                link=all_value(main)[2]
+                # for r in range(0,len(title)):
+                create_csv(id,i,title,description,link)
+    finally:
+        
             print("Value stored")
-    else: 
-        pass
+
 def all_value(main):
     link_result=[]
     title_result=[]
@@ -61,23 +81,46 @@ def all_value(main):
                     description_result.append("Not Found")
     return[title_result,description_result,link_result]
 
-
-def create_csv(s,t,d,l,path_):
-    dictonary={"Search_Query":s,"Title":t[:5], "Description":d[:5],"Link":l[:5]}
-    df=pd.DataFrame(dictonary,columns=['Search_Query','Title', 'Description', 'Link'])
+def create_csv(id,s,t,d,l):
+    dictonary={"Id":id,"Search_Query":s,"Title":t[:5], "Description":d[:5],"Link":l[:5]}
+    df=pd.DataFrame(dictonary,columns=['Id','Search_Query','Title', 'Description', 'Link'])
 
     df["Description"] = df['Description'].str.replace((".*—")," ",regex=True)
-    df.to_csv(f'{path_}.csv',index=False)
-    database(f'{path_}.csv')
+    # df.to_csv(f'{s}.csv',index=False)
+    df2 = df.stack().reset_index()
+    df2= df2.rename(columns={'level_0': 'Index','level_1':'Topic', 0: 'Value'})
+    column_length=df.columns[:]
+    c_l=len(column_length)
+    df2.drop(df2.loc[df2['Topic']=="index"].index, inplace=True)
+    loc_index=0
+    i=0
+    j=1
+    k=1
+    indexing=[]
+    first_value=df.iloc[0].Search_Query
 
-def database(file):
+
+    for d in df['Search_Query']:
+        i+=1
+        if(first_value!=d):
+            j+=1
+            i=1
+            first_value=d
+        for a in range (1,c_l+1):
+            indexing.append(str(j)+"."+str(i)+"."+str(a))
+    df2['Index']=pd.Series(indexing)
+    engine = create_engine("postgresql+psycopg2://postgres:1223@localhost:5432/first")
+    df2.to_sql(name='final_google',con=engine,index=False,if_exists='append')
     try:
-        engine = create_engine("postgresql+psycopg2://postgres:1223@localhost:5432/first")
-        df2=pd.read_csv(file,encoding="utf-8")
-        df2.to_sql(name='final',con=engine,index=False,if_exists='append')
-        print("file copied to db")
-    except(Exception,psycopg2.DatabaseError) as e:
-        print (e)
+        connected=psycopg2.connect(host="localhost",user="postgres",password=1223,database="first")
+        cursor=connected.cursor()
+        insert=f'''update scrape_info set platform='google' where id={id}'''
+        cursor.execute(insert)
 
-
-
+    except psycopg2.DatabaseError as e:
+        print(e)
+    finally:
+        if connected is not None:
+            connected.close()
+        if cursor is not None:
+            cursor.close()

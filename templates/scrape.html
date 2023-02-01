@@ -1,0 +1,57 @@
+
+  <body>
+    <div class="container">
+      <form action='/scrape' method="POST" enctype="multipart/form-data"></form>
+      <h1>Scrapper</h1>
+      <table class="fl-table">
+        <tbody>
+      <tr>
+        {%for v in name%}
+        <td> {{v[1]}}</td>
+        <td><a href="{{url_for(('google_scraping'),filename=v[1],id=v[0])}}">Google scrape </a></td>
+        <td><a href="{{url_for(('daraz_scraping'),filename=v[1],id=v[0])}}">Daraz Scrape </a></td>
+        {%endfor%}
+      </tr>
+    </tbody>
+      </table>
+      
+    </form>
+    </div>
+  </body>
+  
+  <style>
+  html,
+  body {
+    height: 100%;
+  }
+  h1{
+    text-align: center;
+  }
+  body {
+    margin: 0;
+    background: linear-gradient(45deg, #49a09d, #5f2c82);
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+  
+  .container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  table {
+    width: 800px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  
+  td {
+    padding: 10px;
+    background-color: rgba(255,255,255,0.2);
+    color: #fff;
+    text-align: center;
+  }
+  
+  </style>

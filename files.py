@@ -1,15 +1,18 @@
 import psycopg2
 import pandas as pd
-def unscraped():
+def files():
     connected=None
     cursor=None
     try:
         connected=psycopg2.connect(host="localhost",user="postgres",password=1223,database="first")
         cursor=connected.cursor()
-        query='''select path from scrape_info where scraped=false'''
+        query='''select id,path,platform from scrape_info where scraped=true order by id '''
         cursor.execute(query)
-        return(cursor.fetchone()[0].split('\\')[-1])
-
+        full_path=[]
+        data=cursor.fetchall()
+        for j in data:
+            full_path.append((j[0],j[1],j[2]))
+        return(full_path)
     except psycopg2.DatabaseError as e:
         print(e)
     finally:
