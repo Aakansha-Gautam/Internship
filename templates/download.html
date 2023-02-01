@@ -1,6 +1,6 @@
 <body>
   <div class="container">
-<form action='/download/' method="POST" enctype="multipart/form-data">
+<form action='/download' method="POST" enctype="multipart/form-data">
     <h1>Download</h1>
     <table class="fl-table">
       <tbody>
@@ -8,17 +8,15 @@
       {%for v in name%}
       <td> {{v[1]}}</td>
       <td>{{v[2]}}</td>
-      <td><a href="{{url_for(('downloading'),id=v[0])}}"> Download</a></td>
+      {%if "google" in v[2] %}
+      <td><a href="{{url_for(('downloading'),id=v[0])}}"> Download Google</a></td>
+      {%else %}
+      <td><a href="{{url_for(('downloading_daraz'),id=v[0])}}"> Download Daraz</a></td>
+      {% endif %}
       {%endfor%}
     </tr>
   </tbody>
     </table>
-    <!-- {%for v in name%}
-    {{v[1]}}
-    <a href="{{url_for(('downloading'),id=v[0])}}"> Download</a>
-    <br>
-    {%endfor%} -->
-    
   </form>
   </div>
 </body>

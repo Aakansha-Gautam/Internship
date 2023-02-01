@@ -1,0 +1,23 @@
+<form action="/api/upload" method="POST" enctype="multipart/form-data">
+    <h1><label for="file"> Upload your file: </label></h1>
+    <input type="file" name="textfile"/>
+    <br>
+    <br>
+    <input type="submit" value="Upload" />
+
+    {%if upload%}
+    <h5>{{upload}}</h5>
+    {% endif %}
+    </form>
+
+
+<form action='/api/process' method="POST" enctype="multipart/form-data">
+    <h1><label for="submit"> Process API </label></h1>
+    <input type="submit" value="Proceed" />
+    </form>
+
+    <form action='/download/api' method="POST" enctype="multipart/form-data">
+        <h1><label for="download"> Download</label></h1>
+        <input type="submit" value="download" />
+        </form>
+    

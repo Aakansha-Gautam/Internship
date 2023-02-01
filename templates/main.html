@@ -10,6 +10,9 @@
     <h5>{{upload}}</h5>
     {% endif %}
     </form>
+    <form action="/api" method="POST" enctype="multipart/form-data">
+        <a href="{{url_for(('api_page'))}}"> click for api data</a>
+    </form>
 
 <form action='/scrape' method="POST" enctype="multipart/form-data">
     <h1><label for="submit"> Scrapper </label></h1>

@@ -4,11 +4,10 @@ import os
 from zipfile import ZipFile
 from os.path import basename
 
-def access_file():
+def access_file(id):
     connected=None
     cursor=None
     try:
-        id=1
         connected=psycopg2.connect(host="localhost",user="postgres",password=1223,database="first")
         cursor=connected.cursor()
         query=f'''with pivot as(SELECT
@@ -46,7 +45,7 @@ def access_file():
         df2['Index']=pd.Series(indexing)
         df2.to_csv(os.path.join(folder,f'{id}_google_vertical.csv'),index=False)
         df.to_csv(os.path.join(folder,f'{id}_google.csv'))
-        with ZipFile(f'{id}.zip', 'w') as zipObj:
+        with ZipFile(f'{id}_google.zip', 'w') as zipObj:
             final=f"C:\\Users\\aakan\\OneDrive\\Desktop\\flask\\files\\{id}_google"
             for folderName, subfolders, filenames in os.walk(final):
                 for filename in filenames:

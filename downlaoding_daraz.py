@@ -14,7 +14,7 @@ def access_file_daraz(id):
         max(CASE WHEN "Topic"= 'Id' THEN "Value" END) AS scrape_id,
         max(CASE WHEN "Topic"= 'Search_Query' THEN "Value" END) AS search_topic,
         max(CASE WHEN "Topic"= 'Title' THEN "Value" END) AS title,
-        max(CASE WHEN "Topic" = 'Description' THEN "Value" END) AS description,
+        max(CASE WHEN "Topic" = 'Description' THEN "Value" END) AS price,
         max(CASE WHEN "Topic" = 'Link' THEN "Value" END) AS link
         FROM final_daraz
         group by substr("Index",1,3)) 
@@ -45,7 +45,7 @@ def access_file_daraz(id):
         df2['Index']=pd.Series(indexing)
         df2.to_csv(os.path.join(folder,f'{id}_daraz_vertical.csv'),index=False)
         df.to_csv(os.path.join(folder,f'{id}_daraz.csv'))
-        with ZipFile(f'{id}.zip', 'w') as zipObj:
+        with ZipFile(f'{id}_daraz.zip', 'w') as zipObj:
             final=f"C:\\Users\\aakan\\OneDrive\\Desktop\\flask\\files\\{id}_daraz"
             for folderName, subfolders, filenames in os.walk(final):
                 for filename in filenames:

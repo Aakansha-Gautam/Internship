@@ -34,7 +34,7 @@ def get_value_daraz(filename,id):
                 element.send_keys(i.strip())
                 element.send_keys(Keys.RETURN)
                 i_path="C:\\Users\\aakan\\OneDrive\\Desktop\\flask\\files"
-                image_path=os.path.join(i_path,id+"daraz")
+                image_path=os.path.join(i_path,id+"_daraz")
                 if not os.path.exists(image_path):
                     os.mkdir(image_path)
                 final=os.path.join(image_path,i.strip())
